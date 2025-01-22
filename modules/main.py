@@ -931,7 +931,7 @@ async def txt_handler(bot: Client, m: Message):
     raw_text4 = input4.text
     await input4.delete(True)
     if raw_text4 == 'unknown':
-        MR = token
+        MR = raw_text4
     else:
         MR = raw_text4
         

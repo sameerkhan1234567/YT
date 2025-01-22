@@ -509,8 +509,13 @@ async def txt_handler(bot: Client, m: Message):
                     x = url.split("/")[5]
                     x = url.replace(x, "")
                     url = ((m3u8.loads(requests.get(url).text)).data['playlists'][1]['uri']).replace(q+"/", x)
-                    
-            elif '/master.mpd' in url or /master.m3u8 in url:
+
+
+             elif '/master.m3u8 in url:
+             vid_id =  url.split("/")[-2]
+             url =  f"https://pw-links-api.onrender.com/process?v=https://sec1.pw.live/{vid_id}/master.mpd&quality={raw_text2}"
+       
+            elif '/master.mpd' in url:
              vid_id =  url.split("/")[-2]
              url =  f"https://pw-links-api.onrender.com/process?v=https://sec1.pw.live/{vid_id}/master.mpd&quality={raw_text2}"
 

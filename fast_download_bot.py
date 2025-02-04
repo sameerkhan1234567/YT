@@ -3,16 +3,16 @@ import asyncio
 import aria2p
 import os
 import aiofiles
-from config import "API_ID" "29755489", "API_HASH" "05e0d957751c827aa03494f503ab54fe", PHONE_NUMBER, ARIA2_RPC_URL
+from config import "API_ID" "29755489", "API_HASH" "05e0d957751c827aa03494f503ab54fe", ARIA2_RPC_URL
 
 # Telegram Client सेट करें
-client = TelegramClient("session_name", API_ID, API_HASH)
+client = TelegramClient("session_name", "API_ID" "29755489", "API_HASH" "05e0d957751c827aa03494f503ab54fe")
 
 # Aria2 Client सेट करें
 aria2 = aria2p.Client(host="http://localhost", port=8000, secret="")
 
 async def main():
-    await client.start(PHONE_NUMBER)
+    await client.start( )
     print("Bot Started...")
 
 # जब कोई TXT फ़ाइल प्राप्त हो, तो उसे तेज़ी से डाउनलोड करें

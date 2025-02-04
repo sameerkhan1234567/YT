@@ -3,7 +3,7 @@ import asyncio
 import aria2p
 import os
 import aiofiles
-from config import API_ID, API_HASH, PHONE_NUMBER, ARIA2_RPC_URL
+from config import "API_ID" "29755489", "API_HASH" "05e0d957751c827aa03494f503ab54fe", PHONE_NUMBER, ARIA2_RPC_URL
 
 # Telegram Client सेट करें
 client = TelegramClient("session_name", API_ID, API_HASH)
